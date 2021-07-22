@@ -22,8 +22,10 @@ textarea{
 }
 
 .description{
+  display: flex;
+  align-items: center;
   text-align: left;
-  padding-left: 20px !important;
+  padding-left: 20px;
   white-space: pre-wrap;
   background-color: #d3d3d3;
 }

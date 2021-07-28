@@ -5,11 +5,13 @@ body {
 }
 
 textarea{
+  width: 100%;
   background: transparent;
-  border: none;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
 }
 
@@ -21,13 +23,12 @@ textarea{
   border-bottom: 10px solid black;
 }
 
-.description{
+.description, .action{
   display: flex;
   align-items: center;
   text-align: left;
   padding-left: 20px;
   white-space: pre-wrap;
-  background-color: #d3d3d3;
 }
 
 .time-block{
@@ -36,6 +37,7 @@ textarea{
   align-items: center;
   justify-content: center;
   border-radius: 15px;
+  background-color: #d3d3d3;
 }
 
 .time-block > .row {
@@ -45,7 +47,11 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
+}
+
+.time-block:last-child .hour {
+  border-bottom: 1px solid #000000;
 }
 
 .hour {
@@ -72,12 +78,25 @@ textarea{
   color: white;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+.btn {
+  width: 100%;
+  border-radius: 10px;
   background-color: #06AED5;
   color: white;
+}
+
+/* .editBtn {
+  border-radius: 10px;
+  background-color: #06AED5;
+  color: white;
+} */
+
+.saveBtn {
+  /* width: 100%;
+  border-left: 1px solid black;
+  border-radius: 10px;
+  background-color: #06AED5;
+  color: white; */
 }
 
 .saveBtn i:hover {
